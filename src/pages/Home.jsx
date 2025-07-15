@@ -13,8 +13,8 @@ export default function Home() {
 
   <>
       <Text as="h1" text="Bienvenido a MovieDB" />
-          <Text as="p" text="Millones de películas, programas de TV y personas por descubrir. Explora ahora."/>
-          <Form />
+          <Text as="p" text="Miles de películas de cine, programas de TV y series por descubrir. Busca ahora tu preferida."/>
+          <Form  />
 
     </>
   )

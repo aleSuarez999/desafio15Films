@@ -15,7 +15,7 @@
 
         &.btn__outline {
             
-            color: $dark-bg;
+            color: white;
             background-color: transparent;
             
             border: 2px solid $accent-color;
@@ -23,7 +23,7 @@
             &:hover{
                 
                 background-color: $primary-color; // modificado por obsolecencia
-                color: $dark-bg;
+                
             }
         }
 

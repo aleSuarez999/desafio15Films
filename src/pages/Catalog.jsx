@@ -22,7 +22,7 @@ useEffect(() => {
 
  return (
   <>
-        <Text as="h2" text="Productos" />
+        <Text as="h2" text="Peliculas" />
         <div className='product__grid'>
         {
             films.map(films => 

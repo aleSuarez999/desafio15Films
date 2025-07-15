@@ -1,26 +1,38 @@
-import React, { useContext, useEffect, useState } from 'react'
+import {  useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import CartContext from '../context/Context'
+import CardDetail from '../components/CardDetail'
+import { getFilm } from '../utils/api'
 
-function ProductDetail() {
-  const {products} = useContext(CartContext)
-
-  const [producto, setProducto] = useState({})
+function FilmDetail() {
+  
+  const [film, setFilm] = useState([])
 
   const { id } = useParams() // leo el id que viene por el get que manda el card
 
   useEffect(() => {
-    
-    setProducto(  products.filter(prod => parseInt(prod.id) == parseInt(id))[0]    )
-    
+    (id !== "") ? (
+    getFilm(id)
+    .then( obj =>  setFilm(obj) )
+    .catch(err => console.error(err))
+    .finally(setFilm(""))
+ 
+    ): undefined
   }, [])
-  
-  //const producto = products.filter(prod => prod.id == id)
-  //console.log(products)
 
+  
+  
   return (
-    <>detalle{id}{producto.name}</>
+    <>
+       {
+      (film != "") ? 
+      (
+      <CardDetail key={film.id} {...film} />
+      ) : undefined
+     
+    }
+
+    </>
   )
 }
 
-export default ProductDetail
+export default FilmDetail

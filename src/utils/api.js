@@ -6,8 +6,14 @@ const axiosInstance = axios.create({
 })
 
 export const getFilms = async (peliBuscada) => {
-    const resp = await axiosInstance.get("search/titles?query=" + peliBuscada)
+    const resp = await axiosInstance.get(`search/titles?query=${peliBuscada}`)
     //console.log (resp.data)
     return resp.data.titles
 }
 
+
+export const getFilm = async (id) => {
+    const resp = await axiosInstance.get(`titles/${id}`)
+    //console.log (resp.data)
+    return resp.data
+}

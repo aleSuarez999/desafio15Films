@@ -7,7 +7,7 @@ function Navbar() {
     <header className='header__content' >  
         <div className='header__container'>
               <NavLink to="/" >
-                <Text as="h1" text="Home" />
+                <Text as="h1" text="MovieDB" />
               </NavLink>
             <nav>
                 <NavLink to="/Catalog" >Catalogo</NavLink>

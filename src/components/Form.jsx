@@ -34,7 +34,7 @@ useEffect(() => {
     <>
       <form className='form mb-100' onSubmit={handleSubmit} >
           <input name="textoBuscado" type='text' placeholder='Ingrese un titulo a buscar' value={value} onChange={handleChange} />
-          <Button type="submit" label="Buscar"  />
+          <Button type="submit" label="Buscar" className="btn__primary btn__outline mt-2" />
       </form>
       {
         (films.length > 0) ? ( films.map( pelis => <Text as='h3' key={pelis.id} text={pelis.primaryTitle} /> )) : undefined
