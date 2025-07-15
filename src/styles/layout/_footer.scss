@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as *;
+.footer__container{
+
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__content{
+    background-color: $primary-color;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    left:0;
+
+}
+
+
+

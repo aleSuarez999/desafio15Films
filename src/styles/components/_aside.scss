@@ -1,0 +1,24 @@
+aside{
+    z-index: -1;
+    height: 100vh - 100;
+    display: flex;
+    width: auto;
+    justify-content: start;
+    
+    nav{
+        margin-top: 5rem;
+        padding: 1rem 5rem 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content:flex-start;
+        gap: 0.5rem;
+        a {
+            color:black;
+            background-color: transparent;
+            vertical-align:top;
+            &::before{content: " ~ "}
+        }
+
+    }
+}

@@ -1,0 +1,99 @@
+$grid-columns: 12;
+$cardWidth: 210px;
+
+$primary-color: #6a11cb;     
+$secondary-color: #2575fc;     
+$dark-bg: #0f0c29;             
+$navbar-bg: #1a1a2e;           
+$footer-bg: #16213e;           
+$card-bg: #1e1e3f;             
+$text-primary: #ffffff;       
+$text-secondary: #e2e2e2;      
+$accent-color: #00d2ff;  
+$shadow-elevated: 0px 3px 3px 3px rgba(150, 150, 0, 0.5);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+
+); 
+$grid-width: (
+  xs: 360px,
+  sm: 520px,
+  md: 720px,
+  lg: 880px,
+  xl: 1120px,
+  xxl: 1280px
+);
+
+$spacings: (
+    m: margin,
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    p: padding,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right,
+);
+
+$aligns: (
+    aic: center,
+    aie: end,
+    aife: flex-end,
+    ais: start,
+    aifs: flex-start,
+);
+
+$alignSelf: (
+    aisc: center,
+    aise: end,
+    aisfe: flex-end,
+    aiss: start,
+    aisfs: flex-start,
+);
+
+$justifys: (
+  jcc: center,
+  jcl: left,
+  jcsa: space-around,
+  jcsb: space-between,
+  jcfe: flex-end,
+  jce: end
+
+);
+
+$justifySelf: (
+  jsc: center,
+  jsl: left,
+  jssa: space-around,
+  jssb: space-between,
+  jsfe: flex-end,
+  jse: end
+
+);
+
+
+
+// justify-self jsFE
+
+$textAligns: (
+  tac: center,
+  tal: left,
+  tar: right
+);
+
+$font-w: (
+  xs: 2rem,
+  sm: 2rem,
+  md: 2.5rem,
+  lg: 2.5rem,
+  xl: 3.5rem,
+  xxl: 4rem
+); 

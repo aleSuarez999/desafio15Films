@@ -1,0 +1,21 @@
+@use "../abstracts/variables" as *;
+.header__content{
+    background-color: $navbar-bg;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+
+}
+
+.header__container{
+
+padding: 0 1rem;
+display: flex;
+justify-content: space-around;
+
+align-items: center;
+
+}
+
+
