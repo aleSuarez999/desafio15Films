@@ -10,7 +10,8 @@ function Navbar() {
                 <Text as="h1" text="MovieDB" />
               </NavLink>
             <nav>
-                <NavLink to="/Catalog" >Catalogo</NavLink>
+                <NavLink to="/Catalog" >Catalogo IMDBFREE</NavLink>
+                <NavLink to="/Catalog2" >Catalogo TMDB</NavLink>
             </nav>
         </div>
     </header>

@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Text from '../components/Text'
-import Card from '../components/Card'
-import { getFilms, getCatalog } from '../utils/api'
 
-export default function Catalog() {
+import { getCatalog } from '../utils/api2'
+import CardTmdb from '../components/CardTmdb'
+
+export default function Catalog2() {
   
 const [films, setFilms] = useState([])
 
@@ -25,11 +26,13 @@ useEffect(() => {
         <Text as="h2" text="Peliculas" />
         <div className='product__grid'>
         {
+        
+        
             (films.length > 8) ? (
               films.map(films1 => 
-                  <Card key={films1.id} {...films1} />
+                  <CardTmdb key={films1.id} {...films1} />
               )
-            ):undefined
+            ):undefined  
         }
           </div>
     </>

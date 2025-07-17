@@ -11,6 +11,14 @@ export const getFilms = async (peliBuscada) => {
     return resp.data.titles
 }
 
+export const getCatalog = async () => {
+
+    const resp1 = await axiosInstance.get(`search/titles?query=F1`)
+
+    return resp1.data.titles
+}
+
+
 
 export const getFilm = async (id) => {
     const resp = await axiosInstance.get(`titles/${id}`)

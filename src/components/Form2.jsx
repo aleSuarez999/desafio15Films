@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Text from './Text'
 import Button from './Button'
-import { getFilms } from '../utils/api'
-import Card from './Card'
+import { getFilms } from '../utils/api2'
+import Card from './CardTmdb'
+import CardDetail from './CardDetail2'
 
 function Form() {
 
@@ -46,7 +47,7 @@ useEffect(() => {
 
 
             films.map(films => 
-                <Card key={films.id} {...films} />
+                <Card2 key={films.id} {...films} />
             )
 
 
