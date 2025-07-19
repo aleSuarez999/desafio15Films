@@ -1,6 +1,6 @@
 import axios from "axios"
-
-const API_TOKEN = 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNjY2YTEwNGNjY2JhZWU5MjMwMzAyZWEyODkwOTNlYSIsIm5iZiI6MTc1Mjc3MjkwMC41NTcsInN1YiI6IjY4NzkzMTI0M2NiZmJlNGExZWJhODc0OSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ._MLV3QvjdRaVmIcvUZRXd_IyIZHpSo5lkBPczmUfBw8'
+const APIKEY = import.meta.env.VITE_API_KEY
+const API_TOKEN = `Bearer ${APIKEY}`
 
 const axiosInstance = axios.create({
    // baseURL: import.meta.env.VITE_BASE_URL
