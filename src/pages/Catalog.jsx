@@ -1,14 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Text from '../components/Text'
 import Card from '../components/Card'
-import { getFilms, getCatalog } from '../utils/api'
+import { getCatalog } from '../utils/api'
 
 export default function Catalog() {
   
 const [films, setFilms] = useState([])
 
 useEffect(() => {
-//  getFilms("x")
+
   getCatalog()
   
   .then( data => setFilms(data) )

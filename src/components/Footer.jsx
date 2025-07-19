@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className='footer__content' >
         <div className='footer__container'>
-            Footer
+            Moviedb @
         </div>
     </footer>
   )
